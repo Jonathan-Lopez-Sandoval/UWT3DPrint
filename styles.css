@@ -1,5 +1,12 @@
+.small-border {
+    max-width: 1250px;
+    Margin: 10px auto;
+    Padding: 20px;
+    box-shadow: gray 0px 0px 5px;
+    border-radius: 5px;
+    border: 2px solid;
+}
 
-/* Center content vertically and horizontally */
 body {
 	font-family: Arial, sans-serif;
 	margin: 0;
@@ -7,54 +14,40 @@ body {
 	background-color: #818589;
 }
 
-/* Style the login container */
-.login-container {
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+h1 {
+  background-color: rgba(255, 255, 255, 0.65);
+  margin-top: 115px;
+  text-align: center;
+  width: 610px;
+  margin-left: 625px;
+  margin: 115px auto 0;
+  border-radius: 10px;
 }
 
-/* Style the input field */
-#email {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
+.button a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: grey;
+  color: black;
+  font-weight: bold;
+  font-size: 24px;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  }
 
-/* Style the login button */
-button {
-    padding: 10px 15px;
-    border: none;
-    background-color: #007acc;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
+.button a:hover {
+  background-color: whitesmoke;
+  }
 
-button:hover {
-    background-color: #005f99;
+@media (max-width: 768px) {
+  h1 {
+    width: 80%; /* Adjust width for smaller screens */
+    margin-top: 80px; /* Adjust margin-top for smaller screens */
+    margin-left: auto; /* Center the header horizontally */
+    margin-right: auto;
+  }
 }
-
-/* Error message styling */
-.error {
-    color: red;
-    font-size: 12px;
-    display: block;
-    margin-top: 5px;
-}
-
-/* Style the welcome section */
-.small-border {
-    margin-top: 20px;
-    padding: 10px;
-    font-size: 18px;
-}
-
 
 header {
   position: relative;
@@ -109,4 +102,229 @@ section {
 
 }
 
+center-iframe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Optional: Set a specific height for centering vertically */
+}
 
+footer {
+	background-color: #0a0a0a;
+	color: white;
+	text-align: center;
+	padding: .5em;
+	bottom: 0;
+	width: 100%;
+
+}
+
+
+
+iframe {
+  border: black;
+  margin-left: 380px;
+  width: 500px;
+  margin-bottom: 50px;
+  height: 580px;
+
+}
+img {
+    float: right;
+    margin-top: 10px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+h2 {
+  text-align: left;
+  font-size: 35px ;
+
+}
+
+.form-container {
+    float: right;
+    width: 30%; /* Adjust the width as needed */
+    padding: 00px;
+
+}
+
+
+.form-container h2{
+  margin-top: 0px;
+
+}
+
+
+.form-container form {
+  margin-top: -20px; /* Adjust the margin to move the form up */
+
+}
+
+/* Adjust the margin for better spacing */
+.small-border h2, .small-border p, .small-border h4 {
+  margin-bottom: 25px;
+
+}
+
+
+h4 {
+  text-align: left;
+  font-size: 15px ;
+
+}
+
+h6 {
+  text-align: left;
+  font-size: 15px ;
+
+}
+
+.title h2 {
+  text-align: center;
+}
+
+.services-section {
+  width: 76%;
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  /*background-color: red;*/
+}
+
+
+.card1 h2 {
+  background-color: rgba(255, 255, 255, 0.65);
+  font-size: xx-large;
+  font-weight: bold;
+  max-width: 1250px;
+  Margin: 10px auto;
+  Padding: 10px;
+  Background color: green;
+  box-shadow: gray 0px 0px 5px;
+  border-radius: 5px;
+}
+
+.card1 section {
+  background-color: rgba(255, 255, 255, 0.65);
+  font-size: 125%;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 940px) {
+  .services-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.services-section h2{
+  background-color: rgba(255, 255, 255, 0.65);
+  font-size: xx-large;
+  font-weight: bold;
+  max-width: 1250px;
+  Margin: 10px auto;
+  Padding: 10px;
+  Background color: green;
+  box-shadow: gray 0px 0px 5px;
+  border-radius: 5px;
+}
+
+.services-section section {
+  background-color: rgba(255, 255, 255, 0.65);
+  font-size: 125%;
+  font-weight: bold;
+}
+
+.card1 {
+  width: 97%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 20px;
+  padding: 20px 0px;
+  background-color: #fff;
+  border-radius: 10px;
+  background-image: url(mowinggrass.jpg);
+  background-size: cover;
+}
+
+.card2 {
+  width: 97%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 20px;
+  padding: 20px 0px;
+  background-color: #fff;
+  border-radius: 10px;
+  background-image: url(landscapingdesign.jpg);
+  background-size: cover;
+}
+
+.card3 {
+  width: 97%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 20px;
+  padding: 20px 0px;
+  background-color: #fff;
+  border-radius: 10px;
+  background-image: url(mulch.jpg);
+  background-size: cover;
+}
+
+.card4 {
+  width: 97%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 20px;
+  padding: 20px 0px;
+  background-color: #fff;
+  border-radius: 10px;
+  background-image: url(irrigation.jpg);
+  background-size: cover;
+}
+
+.card5 {
+  width: 97%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 20px;
+  padding: 20px 0px;
+  background-color: #fff;
+  border-radius: 10px;
+  background-image: url(pruning.jpg);
+  background-size: cover;
+}
+
+.card6 {
+  width: 97%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 20px;
+  padding: 20px 0px;
+  background-color: #fff;
+  border-radius: 10px;
+  background-image: url(fertilization.jpg);
+  background-size: cover;
+}
+
+.card7 {
+  width: 97%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 20px;
+  padding: 20px 0px;
+  background-color: #fff;
+  border-radius: 10px;
+  background-image: url(rockgravel.jpg);
+  background-size: cover;
+}
