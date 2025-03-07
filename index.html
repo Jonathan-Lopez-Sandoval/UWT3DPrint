@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>UWT 3D Print</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+	<body>
+
+		<header>
+			<h1>UWT HelpDesk </h1>
+			<img src="logo23.jpg">
+
+		</header>
+
+		<section class = small-border>
+			<!-- <h2>Welcome to the UWT HelpDesk 3D Print log in page!</h2> -->
+			<h2>Log in to UWT HelpDesk 3D Print</h2>
+
+
+		    <div class="login-container">
+		        <h2>Please log in using your school email.
+		        <form id="loginForm">
+		            <input type="email" id="email" placeholder="Enter your @uw.edu email" required>
+		            <span id="error" class="error"></span>
+		            <button type="submit">Login</button>
+		        </form>
+		    </div>
+
+		    <script>
+		        document.getElementById('loginForm').addEventListener('submit', function(event) {
+		            event.preventDefault(); // Prevent form submission
+
+		            const emailInput = document.getElementById('email');
+		            const errorSpan = document.getElementById('error');
+		            const email = emailInput.value;
+
+		            // Validate that the email ends with @uw.edu
+		            if (/^[\w.-]+@uw\.edu$/.test(email)) {
+		                errorSpan.textContent = '';
+		                window.location.href = 'home.html'; // Redirect to MainPage.html
+		            } else {
+		                errorSpan.textContent = 'Please enter a valid @uw.edu email address.';
+		            }
+		        	});
+
+		    </script>
+				</h2>
+		</section>		
+	</body>
+</html>

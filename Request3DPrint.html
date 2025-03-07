@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request 3D Print</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Request a 3D Print</h1>
+            <img src="logo24.jpg" alt="Logo">
+        </div>
+        <div class="button-container">
+            <button class="btn" onclick="window.location.href='home.html'">Home</button>
+            <button class="btn" onclick="window.location.href='3DPrintDisplay.html'">3D Print Display</button>
+        </div>
+    </header>
+    <main>
+        <section class="small-border">
+            <h2>Submit Your 3D Print Request</h2>
+            <form>
+                <label for="file">Upload 3D Model (.STL, .OBJ):</label>
+                <input type="file" id="file" accept=".stl, .obj" required>
+                <br><br>
+                <label for="description">Description:</label>
+                <textarea id="description" rows="4" required></textarea>
+                <br><br>
+                <button type="submit">Submit Request</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Your Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
