@@ -1,5 +1,14 @@
 
 
+html, body {
+    height: 100%; /* Ensures full height of the viewport */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
 
 .small-border {
     max-width: 950px;
@@ -44,11 +53,16 @@ h1 {
 
 
 
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: Roboto;
     margin: 0;
     padding: 0;
     background-color: #b7a57a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures the main content takes available space */
+    min-height: 100vh; /* Forces body to take at least the full height of the viewport */
 
 
 }
@@ -104,6 +118,7 @@ footer {
     bottom: 0;
 
 }
+
 
 input[type="email"] {
     width: 80%;
